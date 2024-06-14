@@ -1,0 +1,13 @@
+<%-include("partials/header.ejs")%>
+
+<div class="container col-8 h-75">
+        <form action="/createnew" method="POST" class="postCreater">
+            <input type="textbox" name="title" placeholder="Enter Title" class="title"><br>
+            <textarea name="content" placeholder="Enter Content" class="content"></textarea>
+            <input type="submit" value="CREATE" class="createButton">
+        </form>
+</div>
+
+</main>
+
+<%-include("partials/footer.ejs")%>

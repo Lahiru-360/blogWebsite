@@ -1,0 +1,11 @@
+<%-include("partials/header.ejs")%>
+
+<div class="container col-8 h-75">
+        <form action="/update/<%= index %>" method="POST" class="postCreater">
+            <input type="textbox" name="editedTitle" value="<%= title %>"  class="title">
+            <textarea name="editedContent" class="content" style="margin-top: 24px;"><%= content %></textarea>
+            <input type="submit" value="UPDATE" class="createButton">
+        </form>
+</div>
+</main>
+<%-include("partials/footer.ejs")%>

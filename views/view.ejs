@@ -1,0 +1,19 @@
+<%-include("partials/header.ejs")%>
+<div class="container">
+    <h1 class="viewHeading"><%=title %></h1>
+    <p class="viewContent"><%= content%></p>
+    <div class="addDelete">
+        <div>
+            <form action="edit/<%= index%>" method="get">
+            <input type="submit" value="EDIT" class="addButton">
+            </form>
+        </div>
+        <div>
+            <form action="delete/<%= index%>" method="post">
+                <input type="submit" value="DELETE" class="deleteButton">
+            </form>
+        </div>
+    </div>
+</div>
+</main>
+<%-include("partials/footer.ejs")%>

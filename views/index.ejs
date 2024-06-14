@@ -1,0 +1,14 @@
+<%-include("partials/header.ejs")%>
+<div class="container">
+
+    <% if (locals.blogArr.length === 0) {%>
+        <h1>It feels so empty without YOU!</h1>      
+    <% } else { %>      
+        <% for (var i=0; i<blogArr.length; i++) { %>
+            <div class="postContainer"><h1><a href="<%= i %>"><%= blogArr[i].postTitle%></a></h1><br><p class="paras"><%= blogArr[i].postContent%> </p></div>
+        <% } %>
+        <% } %>
+</div>
+</main>
+
+<%-include("partials/footer.ejs")%>
